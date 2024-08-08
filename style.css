@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+.banner{
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.banner h1{
+    font-size: 3rem;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+.banner p{
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.banner_btn{
+    border: none;
+    border-radius: 100px;
+    padding: 15px 25px;
+    box-shadow: 0px 2px 30px 0px rgba(252, 143, 73, 0.5);
+    background: linear-gradient(69.40deg, rgb(251, 162, 79) -6.919%,rgb(255, 30, 30) 144.985%);
+    color: #fff;
+    cursor: pointer;
+}
+
+#skip{
+    color: rgba(245, 126, 8, 0.989);
+}
+
+.banner_img_container{
+    position: relative;
+}
+
+.banner_img_bg{
+    width: 100%;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    z-index: -1;
+}
+
+.hero_img{
+    width: 100%;
+}
+
+
+.about_me{
+    width: 100%;
+    /* height: 600px; */
+    margin: 0 auto;
+    background-image: url('images/shapes/7.png');
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: center;
+    background-size: 100% 100%;
+    /* background-attachment: fixed; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+    padding: 20px 0;
+}
+
+.about_me div{
+    width: 40%;    
+}
+
+.about_me img{
+    width: 50%;
+    height: 50%;
+    margin-left: 30%;
+    transform: translateY(24px);
+}
+
+ h2{
+    font-size: 2rem;
+    opacity: 0.6;
+}
+
+.about_me p{
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+
+.my_recipe{
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.my_recipe > p{
+    width: 60%;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+.recipe_container{
+    width: 90%;
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    
+}
+.recipe_container div{
+    box-shadow: 0 0 20px #dbd6d6;
+    border-radius: 20px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left; 
+    gap: 10px; 
+    padding: 20px 25px 40px;
+}
+
+.recipe_container p{
+    font-size: 0.8rem;
+    width: 80%;
+    font-weight: 500;
+    margin-top: 15px;
+
+}
+
+.my_recipe img{
+    width: 100%;    
+}
+
+
+.subscriber_section{
+    width: 82%;
+    margin: 60px auto ;
+    box-shadow: 0 0 20px #dbd6d6;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px 0;
+}
+
+h3{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+
+footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 70px 0;
+}
+
+footer h2{
+    font-family: "Manrope", sans-serif;
+    font-size: 1.8rem;
+    opacity: 0.7;
+}
+
+#eat{
+    color: rgba(245, 126, 8, 0.989);
+}
+#fresh{
+    color: rgb(91, 91, 91);
+}
+
+footer p{
+    margin-top: 20px;
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
+@media screen and (max-width:576px) {
+    .banner, .about_me, .recipe_container, .subscriber_section{
+        flex-direction: column;
+    }
+
+    .banner h1{
+        font-size: 2rem;
+    }
+
+    .about_me{
+        background-size: cover;
+        gap: 50px;
+    }
+   
+    .about_me div{
+        width: 80%;    
+    }
+
+    .about_me img{
+        margin-left: 20%;
+    }
+
+    .subscriber_section{
+        gap: 30px;
+    }
+    footer{
+        padding: 70px 20px;
+    }
+}
